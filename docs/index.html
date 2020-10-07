@@ -13,6 +13,11 @@
 			rel="stylesheet"
 			href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"
 		/>
+		<style>
+			.app-name-link > img {
+				max-height: 150px;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="app"></div>
@@ -24,6 +29,7 @@
 				repo: "https://github.com/make-resume/make-resume",
 				loadSidebar: true,
 				subMaxLevel: 2,
+				logo: "/_media/logo.png",
 				plugins: [
 					EditOnGithubPlugin.create(
 						"https://github.com/make-resume/make-resume.github.io/tree/main/docs/"
