@@ -4,7 +4,7 @@
 
 ## Installation
 
-Since this package provides a `make-resume` CLI tool, one should install it globally using the command:
+Since Make Resume provides a `make-resume` CLI tool, one should install it globally using the command:
 
 `npm install -g make-resume`
 
@@ -21,11 +21,11 @@ You can change the theme of Resume very easily using the `--theme` or `-t` optio
 
 Example:
 
-`make-resume build --theme=<theme-name>`
-
-_or_
-
-`make-resume build -t <theme-name>`
+```
+make-resume build --theme=<theme-name>
+// or
+make-resume build -t <theme-name>
+```
 
 ## What is _theme-name_?
 
@@ -33,7 +33,9 @@ _theme-name_ is the package name of the theme in the case of `built-in-mod` and 
 
 Example:
 
-`make-resume build -t make-resume-theme-base`
+```
+make-resume build -t make-resume-theme-base
+```
 
 The above command will use the `make-resume-theme-base` `built-in-mod` theme, which is a package installed with `make-resume`, to build the Resume. `make-resume-theme-base` is also the default theme so running `make-resume` only would work same as the above example command.
 
@@ -60,8 +62,8 @@ If you pass the `-w` or `--watch` option to `build` sub-command, `make-resume` w
 
 Example:
 
-`make-resume build -w`
-
-_or_
-
-`make-resume build --watch`
+```
+make-resume build -w
+// or
+make-resume build --watch
+```
