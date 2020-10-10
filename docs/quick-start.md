@@ -33,9 +33,9 @@ _theme-name_ is the package name of the theme in the case of `built-in-mod` and 
 
 Example:
 
-`make-resume build -t make-resume-base`
+`make-resume build -t make-resume-theme-base`
 
-The above command will use the `make-resume-base` `built-in-mod` theme, which is a package installed with `make-resume`, to build the Resume. `make-resume-base` is also the default theme so running `make-resume` only would work same as the above example command.
+The above command will use the `make-resume-theme-base` `built-in-mod` theme, which is a package installed with `make-resume`, to build the Resume. `make-resume-theme-base` is also the default theme so running `make-resume` only would work same as the above example command.
 
 ## How themes are chosen?
 
@@ -48,11 +48,11 @@ You can modify any `built-in-mod` or `local-mod` theme very easily using the `cl
 _make sure you are in the same directory as `resume.json`_
 
 1. run `make-resume clone-theme <theme-name>` to clone `<theme-name>` theme in current directory.
-    - e.g. `make-resume clone-theme make-resume-base` will create a `make-resume-base` named directory with all of its files in it.
+    - e.g. `make-resume clone-theme make-resume-theme-base` will create a `make-resume-theme-base` named directory with all of its files in it.
     - the cloned theme will then be used as a `local` theme and you can modify it any way you like.
 2. modify any theme file(s) (we used [Handlebars](https://handlebarsjs.com) for template).
 3. run `make-resume build -t <theme-name>` to build Resume with cloned, now a `local`, theme.
-    - if you'd cloned the `make-resume-base` theme you don't need the `-t` option since it's the default theme.
+    - if you'd cloned the `make-resume-theme-base` theme you don't need the `-t` option since it's the default theme.
 
 ## Watch files
 

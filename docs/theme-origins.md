@@ -7,7 +7,7 @@ There are three possible origins of a theme right now:
 1. `built-in-mod` themes are packages installed with the `make-resume` package as dependencies
 
     - these are available by default
-    - e.g. [`make-resume-base`](https://github.com/make-resume/make-resume-base)
+    - e.g. [`make-resume-theme-base`](https://github.com/make-resume/make-resume-theme-base)
 
 2. `local-mod` themes are packages installed in a directory using `npm install` or similar command
 
