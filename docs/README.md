@@ -6,6 +6,6 @@ Make Resume is a tool to build a Resume yet keeping data separate from design. I
 
 ## Features
 
--   Uses [JSON Resume](jsonresume.org) JSON schema 🌟
+-   Uses [JSON Resume](https://jsonresume.org) JSON schema 🌟
 -   Make multiple Resumes in a single directory by using CLI options 🌟
 -   Modify built-in and other themes; with ease! 🌟
