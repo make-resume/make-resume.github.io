@@ -1,69 +1,40 @@
 # Quick start
 
-> This page will help you through building your first Resume.
+> This page will help you through building your first Resume
 
 ## Installation
 
-Since Make Resume provides a `make-resume` CLI tool, one should install it globally using the command:
+Make Resume provides `make-resume` CLI tool. Install it globally using the command:
 
 `npm install -g make-resume`
 
 ## Usage
 
-1. create and `cd` into a directory (e.g. `my-resume`)
-2. create `resume.json` file and copy the schema from [JSON Resume](https://jsonresume.org/schema/)
-3. run `make-resume` (yes, with no options ‒ yet!)
-4. your Resume should be in the `dist` directory
+1. create and open terminal/shell in a directory (e.g. `mkdir my-resume && cd my-resume`)
+2. create _resume.json_ file and copy the schema from [here](/schema)
+3. run `make-resume`
+4. your Resume should be in the _dist_ directory
 
 ## Themes
 
-You can change the theme of Resume very easily using the `--theme` or `-t` option of `build` sub-command.
+You can change the theme of Resume using `--theme` option of `build` command. Its value should be a [theme-id](/faq?id=what-is-theme-id).
 
 Example:
 
 ```
-make-resume build --theme=<theme-name>
-// or
-make-resume build -t <theme-name>
+make-resume build --theme=make-resume-theme-compact
 ```
 
-## What is _theme-name_?
-
-_theme-name_ is the package name of the theme in the case of `built-in-mod` and `local-mod` themes or directory name in the case of `local` themes. See [Theme origins](theme-origins.md).
-
-Example:
-
-```
-make-resume build -t make-resume-theme-base
-```
-
-The above command will use the `make-resume-theme-base` `built-in-mod` theme, which is a package installed with `make-resume`, to build the Resume. `make-resume-theme-base` is also the default theme so running `make-resume` only would work same as the above example command.
-
-## How themes are chosen?
-
-`make-resume` will first look for `<theme-name>` directory in the current directory to use as a `local` theme, if not found, it'll look for `<theme-name>` package in the current directory, if not found, it'll look for `<theme-name>` package installed with `make-resume`, if not found, it'll end with an error.
-
-## Modify theme
-
-You can modify any `built-in-mod` or `local-mod` theme very easily using the `clone-theme` sub-command.
-
-_make sure you are in the same directory as `resume.json`_
-
-1. run `make-resume clone-theme <theme-name>` to clone `<theme-name>` theme in current directory.
-    - e.g. `make-resume clone-theme make-resume-theme-base` will create a `make-resume-theme-base` named directory with all of its files in it.
-    - the cloned theme will then be used as a `local` theme and you can modify it any way you like.
-2. modify any theme file(s) (we used [Handlebars](https://handlebarsjs.com) for template).
-3. run `make-resume build -t <theme-name>` to build Resume with cloned, now a `local`, theme.
-    - if you'd cloned the `make-resume-theme-base` theme you don't need the `-t` option since it's the default theme.
+**tip: you can use `-t` shorthand for `--theme` option**
 
 ## Watch files
 
-If you pass the `-w` or `--watch` option to `build` sub-command, `make-resume` will continuously look for any changes in `resume.json` or theme files and will rebuild the Resume.
+If you pass the `--watch` option to `build` command, make-resume will continuously look for any changes in info file or theme and will rebuild the Resume.
 
 Example:
 
 ```
-make-resume build -w
-// or
 make-resume build --watch
 ```
+
+**tip: you can use `-w` shorthand for `--watch` option**

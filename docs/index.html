@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Document</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<meta name="description" content="Description" />
-		<meta name="google-site-verification" content="2UdMY3INYP2lKdqQFSYyRJg1b2yzei4mvBsFjmorV2w" />
-		<meta
-			name="viewport"
-			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-		/>
-		<link
-			rel="stylesheet"
-			href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"
-		/>
-		<style>
-			.app-name-link > img {
-				max-height: 150px;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="app"></div>
-		<script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
-		<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-		<script>
-			window.$docsify = {
-				name: "Make Resume",
-				repo: "https://github.com/make-resume",
-				loadSidebar: true,
-				subMaxLevel: 2,
-				logo: "/_media/logo.png",
-				themeColor: '#8d30ff',
-				plugins: [
-					EditOnGithubPlugin.create(
-						"https://github.com/make-resume/make-resume.github.io/tree/main/docs/"
-					),
-				],
-			};
-		</script>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="google-site-verification"
+      content="2UdMY3INYP2lKdqQFSYyRJg1b2yzei4mvBsFjmorV2w"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"
+    />
+    <style>
+      .app-name-link > img {
+        max-height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script>
+      window.$docsify = {
+        name: 'Make Resume',
+        repo: 'https://github.com/make-resume',
+        loadSidebar: true,
+        subMaxLevel: 2,
+        logo: '/_media/logo.png',
+        themeColor: '#8d30ff',
+        plugins: [
+          EditOnGithubPlugin.create(
+            'https://github.com/make-resume/make-resume.github.io/tree/main/docs/'
+          ),
+        ],
+      };
+    </script>
+  </body>
 </html>
