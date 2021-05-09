@@ -38,3 +38,7 @@ make-resume build --watch
 ```
 
 **tip: you can use `-w` shorthand for `--watch` option**
+
+---
+
+**Next: [Modifying Resume](/modifying)**
